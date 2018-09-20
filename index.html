@@ -12,7 +12,8 @@
       <a href="index.html">
          <img class="menu__logo" src="assets/logo.png" alt="Logo Game Jam Plus">
       </a>
-      <nav class="menu__items">
+      <a class="menu__toggle" href="#menu" id="toggle"><span class="menu__toggle__bars"></span></a>
+      <nav class="menu__items" id="menu">
          <a class="menu__link" href="#">Como funciona?</a>
          <a class="menu__link" href="#">Prêmios</a>
          <a class="menu__link" href="#">Galeria</a>
@@ -62,7 +63,7 @@
       </section>
       <section class="section inscricao">
          <h2 class="title title--white">Quer se inscrever?</h2>
-         <p class="text">Entre no link e escolha o evento de sua cidade!</p>
+         <p class="text text--inscricao">Entre no link e escolha o evento da sua cidade!</p>
          <a class="button" href="https://www.sympla.com.br/gamejamplus" target="_blank">Inscreva-se</a>
       </section>
       <section class="section staff">
@@ -147,7 +148,7 @@
             <div class="box">
                <img class="box__image" src="assets/organizadores/danilo.png" alt="Foto de perfil Danilo Carvalho">
                <p class="box__title">Danilo Carvalho</p>
-               <p class="box__text">Organizador - São Teresina</p>
+               <p class="box__text">Organizador - Teresina</p>
             </div>
             <div class="box">
                <img class="box__image" src="assets/organizadores/harry.png" alt="Foto de perfil Harry Florencio">
@@ -163,7 +164,7 @@
       </section>
       <section class="section">
          <h2 class="title">Organizações envolvidas</h2>
-         <div class="container">
+         <div class="container container--org">
             <a class="org" href="#" title="Ir para o site da Gamer Trials">
                <img class="org__image" src="assets/parceiros/gt-logosmall.png" alt="Logo Gamer Trials">
             </a>
@@ -267,5 +268,6 @@
    <footer class="footer">
       <img class="footer__logo" src="assets/logo.png" alt="Logo Game Jam Plus">
    </footer>
+   <script src="menu.js"></script>
 </body>
 </html>
