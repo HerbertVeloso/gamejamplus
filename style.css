@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500');
+@import url('fonts/fonts.css');
 *{
    margin: 0;
    padding: 0;
@@ -15,6 +16,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   z-index: 9999;
 }
 @media (max-width: 768px){
    .menu{
@@ -493,4 +495,59 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+
+
+.newTitle{
+   font-family: Panton-Black;
+   font-size: 2.3vw;
+}
+.newBoxTitle{
+   width: 25vw;
+}
+.newContainer{
+   padding: 3vw 10vw 4vw;
+   color: #FFF;
+   position: relative;
+}
+.newContainer::after{
+   content: "+";
+   font-family: Panton-Black;
+   font-size: 4vw;
+   position: absolute;
+   top: 3vw;
+   left: 6vw;
+}
+.newSubtitle{
+   font-family: Panton-Light;
+   font-size: 2.4vw;
+   text-transform: uppercase;
+}
+.newText{
+   margin-bottom: 1.5vw;
+   font-family: Panton-Light;
+   font-size: 1.35vw;
+   text-transform: uppercase;
+}
+.newItemList{
+   font-family: Panton-Black;
+   font-size: 1.5vw;
+   list-style: none;
+}
+.text--blue{
+   color: #001E3C;
+}
+
+.containerGJ{
+   background: url('assets/bgGJ.png') center no-repeat;
+   background-size: cover;
+}
+.containerAceleracao{
+   background: url('assets/bgAceleracao.png') center no-repeat;
+   background-size: cover;
+}
+.containerFinal{
+   background: url('assets/bgFinal.png') center no-repeat;
+   background-size: cover;
 }
