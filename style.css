@@ -499,25 +499,29 @@
 
 
 
+.newContainer{
+   padding: 3vw 10vw 4vw;
+   color: #FFF;
+}
 .newTitle{
    font-family: Panton-Black;
    font-size: 2.3vw;
 }
+.newTitle--small{
+   margin-bottom: 1vw;
+   font-size: 1.65vw;
+}
 .newBoxTitle{
    width: 25vw;
-}
-.newContainer{
-   padding: 3vw 10vw 4vw;
-   color: #FFF;
    position: relative;
 }
-.newContainer::after{
+.newBoxTitle::after{
    content: "+";
    font-family: Panton-Black;
    font-size: 4vw;
    position: absolute;
-   top: 3vw;
-   left: 6vw;
+   top: calc(50% - 2.5vw);
+   left: -4vw;
 }
 .newSubtitle{
    font-family: Panton-Light;
@@ -535,6 +539,27 @@
    font-size: 1.5vw;
    list-style: none;
 }
+.newList{
+   margin-bottom: 2vw;
+}
+.newTextList{
+   margin-bottom: 1vw;
+   padding-left: 20px;
+   font-family: Panton-Light;
+   font-size: 1.35vw;
+   list-style: none;
+   position: relative;
+}
+.newTextList::before{
+   content: "";
+   width: 10px;
+   height: 1px;
+   margin-right: .5vw;
+   background: #FFF;
+   position: absolute;
+   top: .75vw;
+   left: 0;
+}
 .text--blue{
    color: #001E3C;
 }
@@ -549,5 +574,17 @@
 }
 .containerFinal{
    background: url('assets/bgFinal.png') center no-repeat;
+   background-size: cover;
+}
+.containerAbragames{
+   background: url('assets/bgAbragames.png') center no-repeat;
+   background-size: cover;
+}
+.containerAmazon{
+   background: url('assets/bgAmazon.png') center no-repeat;
+   background-size: cover;
+}
+.containerOutrosPremios{
+   background: url('assets/bgOutrosPremios.png') center no-repeat;
    background-size: cover;
 }
