@@ -631,26 +631,26 @@
 }
 
 .containerGJ{
-   background: red url('assets/bgGJ.png') center no-repeat;
+   background: url('assets/bgGJ.png') center no-repeat;
    background-size: cover;
 }
 .containerAceleracao{
-   background: red url('assets/bgAceleracao.png') center no-repeat;
+   background: url('assets/bgAceleracao.png') center no-repeat;
    background-size: cover;
 }
 .containerFinal{
-   background: red url('assets/bgFinal.png') center no-repeat;
+   background: url('assets/bgFinal.png') center no-repeat;
    background-size: cover;
 }
 .containerAbragames{
-   background: red url('assets/bgAbragames.png') center no-repeat;
+   background: url('assets/bgAbragames.png') center no-repeat;
    background-size: cover;
 }
 .containerAmazon{
-   background: red url('assets/bgAmazon.png') center no-repeat;
+   background: url('assets/bgAmazon.png') center no-repeat;
    background-size: cover;
 }
 .containerOutrosPremios{
-   background: red url('assets/bgOutrosPremios.png') center no-repeat;
+   background: url('assets/bgOutrosPremios.png') center no-repeat;
    background-size: cover;
 }
