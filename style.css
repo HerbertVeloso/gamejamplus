@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,500');
+@import url('fonts/fonts.css');
 *{
    margin: 0;
    padding: 0;
@@ -15,6 +16,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   z-index: 9999;
 }
 @media (max-width: 768px){
    .menu{
@@ -493,4 +495,162 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+
+
+.newContainer{
+   padding: 3vw 10vw 4vw;
+   color: #FFF;
+}
+@media(max-width: 768px){
+   .newContainer{
+      padding: 3vw 5vw 4vw 10vw;
+   }
+ }
+.newTitle{
+   font-family: Panton-Black;
+   font-size: 2.3vw;
+}
+@media(max-width: 768px){
+   .newTitle{
+      font-size: 5vw;
+   }
+ }
+.newTitle--small{
+   margin-bottom: 1vw;
+   font-size: 1.65vw;
+}
+@media(max-width: 768px){
+   .newTitle--small{
+      margin-bottom: 2vw;
+      font-size: 3.5vw;
+   }
+ }
+.newBoxTitle{
+   width: 25vw;
+   position: relative;
+}
+.newBoxTitle::after{
+   content: "+";
+   font-family: Panton-Black;
+   font-size: 4vw;
+   position: absolute;
+   top: calc(50% - 2.5vw);
+   left: -4vw;
+}
+@media(max-width: 768px){
+   .newBoxTitle{
+      width: 60vw;
+   }
+   .newBoxTitle::after{
+      font-size: 8vw;
+      top: calc(50% - 4vw);
+      left: -6.5vw;
+   }
+ }
+.newSubtitle{
+   font-family: Panton-Light;
+   font-size: 2.4vw;
+   text-transform: uppercase;
+}
+@media(max-width: 768px){
+   .newSubtitle{
+      font-size: 5vw;
+   }
+ }
+.newText{
+   margin-bottom: 1.5vw;
+   font-family: Panton-Light;
+   font-size: 1.35vw;
+   text-transform: uppercase;
+}
+@media(max-width: 768px){
+   .newText{
+      margin-bottom: 4vw;
+      font-size: 3.2vw;
+   }
+ }
+.newItemList{
+   font-family: Panton-Black;
+   font-size: 1.5vw;
+   list-style: none;
+}
+@media(max-width: 768px){
+   .newItemList{
+      font-size: 3vw;
+      margin-bottom: 1vw;
+   }
+ }
+.newList{
+   margin-bottom: 2vw;
+}
+@media(max-width: 768px){
+   .newList{
+      margin-bottom: 4vw;
+   }
+ }
+.newTextList{
+   margin-bottom: 1vw;
+   padding-left: 20px;
+   font-family: Panton-Light;
+   font-size: 1.35vw;
+   list-style: none;
+   position: relative;
+}
+.newTextList::before{
+   content: "";
+   width: 10px;
+   height: 1px;
+   margin-right: .5vw;
+   background: #FFF;
+   position: absolute;
+   top: .75vw;
+   left: 0;
+}
+@media(max-width: 768px){
+   .newTextList{
+      margin-bottom: 2vw;
+      padding-left: 20px;
+      font-size: 3vw;
+   }
+   .newTextList::before{
+      width: 7px;
+      height: 1px;
+      margin-right: .5vw;
+      top: 1.5vw;
+      left: 0;
+   }
+ }
+.text--blue{
+   color: #001E3C;
+}
+
+.containerGJ, .containerAceleracao, .containerFinal, .containerAbragames, .containerAmazon, .containerOutrosPremios{
+   margin-bottom: 10vw;
+}
+
+.containerGJ{
+   background: url('assets/bgGJ.png') center no-repeat;
+   background-size: cover;
+}
+.containerAceleracao{
+   background: url('assets/bgAceleracao.png') center no-repeat;
+   background-size: cover;
+}
+.containerFinal{
+   background: url('assets/bgFinal.png') center no-repeat;
+   background-size: cover;
+}
+.containerAbragames{
+   background: url('assets/bgAbragames.png') center no-repeat;
+   background-size: cover;
+}
+.containerAmazon{
+   background: url('assets/bgAmazon.png') center no-repeat;
+   background-size: cover;
+}
+.containerOutrosPremios{
+   background: url('assets/bgOutrosPremios.png') center no-repeat;
+   background-size: cover;
 }
