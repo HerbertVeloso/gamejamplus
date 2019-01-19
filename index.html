@@ -17,10 +17,10 @@
          <a class="menu__link" href="comofunciona.html">Como funciona?</a>
          <a class="menu__link" href="premios.html">Prêmios</a>
          <!-- <a class="menu__link" href="#">Galeria</a> -->
-         <a class="menu__link" href="#">Impacto social</a>
+         <!-- <a class="menu__link" href="#">Impacto social</a> -->
          <!-- <a class="menu__link" href="#">Mentores</a>
          <a class="menu__link" href="#">Organizadores</a> -->
-         <a class="menu__link" href="#">FAQ</a>
+         <!-- <a class="menu__link" href="#">FAQ</a> -->
       </nav>
    </header>
    <main class="">
@@ -53,7 +53,7 @@
          <h1 class="title title--big">Edição passada</h1>
          <div class="separator"></div>
          <iframe class="video" src="https://www.youtube.com/embed/jf94K-EgCaA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-         <a class="button" href="#" target="_blank">Veja as fotos</a>
+         <!-- <a class="button" href="#" target="_blank">Veja as fotos</a> -->
       </section>
       <section class="conteudo">
          <h1 class="title title--big">Cidades Participantes</h1>
@@ -257,10 +257,11 @@
             <div class="separator"></div>
             <p class="text">Tem alguma dúvida? Sugestão? Reclamação? Entre em contato!</p>
          </div>
-         <form class="contact__form">
-            <input class="input" type="text" name="nome" placeholder="Nome">
-            <input class="input" type="email" name="email" placeholder="E-mail">
-            <textarea class="input" name="mensagem" placeholder="Mensagem" rows=4></textarea>
+         <form class="contact__form" action="https://formspree.io/lucas.pessoa@gamertrials.com" method="POST">
+            <input type="hidden" name="_next" value="https://gamejamplus.com" />
+            <input class="input" type="text" name="Nome" placeholder="Nome" required>
+            <input class="input" type="email" name="Email" placeholder="E-mail" required>
+            <textarea class="input" name="Mensagem" placeholder="Mensagem" rows=4 required></textarea>
             <input class="contact__button" type="submit" value="Envie sua mensagem">
          </form>
       </section>
