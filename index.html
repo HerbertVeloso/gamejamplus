@@ -297,10 +297,11 @@
             </div>
             <p class="text">Tem alguma dúvida? Sugestão? Reclamação? Entre em contato!</p>
          </div>
-         <form class="contact__form">
-            <input class="input" type="text" name="nome" placeholder="Nome">
-            <input class="input" type="email" name="email" placeholder="E-mail">
-            <textarea class="input" name="mensagem" placeholder="Mensagem" rows=4></textarea>
+         <form class="contact__form" action="https://formspree.io/lucas.pessoa@gamertrials.com" method="POST">
+            <input type="hidden" name="_next" value="https://gamejamplus.com" />
+            <input class="input" type="text" name="Nome" placeholder="Nome" required>
+            <input class="input" type="email" name="Email" placeholder="E-mail" required>
+            <textarea class="input" name="Mensagem" placeholder="Mensagem" rows=4 required></textarea>
             <input class="contact__button" type="submit" value="Envie sua mensagem">
          </form>
       </section>

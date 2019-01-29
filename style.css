@@ -460,6 +460,7 @@
    color: #001E3C;
    font-size: 1.4vw;
    font-family: 'Roboto', sans-serif;
+   resize: none;
 }
 @media(max-width: 768px){
   .input{
