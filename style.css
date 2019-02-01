@@ -791,3 +791,98 @@
 .text--black{
    font-family: Panton-Black;
 }
+
+.faqContainer{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.faqContainer .newBoxTitle{
+   width: auto;
+   margin: 3vw 10vw;
+}
+.faqBox{
+   width: 34vw;
+   margin: 4vw;
+   background: rgba(5, 26, 66, .8);
+}
+.faqBox--pink{
+   background: rgba(130, 70, 100, .8);
+}
+.faqContainer--reverse{
+   align-items: flex-end; 
+}
+.faqBox .newBoxTitle{
+   margin: 2vw 6vw 0;
+}
+.faqBox .newTitle, .faqBox .newSubtitle{
+   color: #FFF;
+}
+.faqBox .newText{
+   margin: 3vw 3vw 4vw;
+   font-size: 2vw;
+   color: #FFF;
+}
+
+
+
+.faq--oqGJ{
+   background: url('assets/bgOqGJ.png') center no-repeat;
+   background-size: cover;
+}
+.faq--diferenca1{
+   background: url('assets/bgDiferenca1.png') center no-repeat;
+   background-size: cover;
+   margin-bottom: 8vw;
+}
+.faq--diferenca2{
+   background: url('assets/bgDiferenca2.png') center no-repeat;
+   background-size: cover;
+   margin-bottom: 8vw;
+}
+.faq--diferenca3{
+   background: url('assets/bgDiferenca3.png') center no-repeat;
+   background-size: cover;
+   margin-bottom: 8vw;
+}
+
+.faqBoxPink{
+   width: 35vw;
+   margin-top: 8vw;
+   padding: 2.5vw;
+   background: rgba(130, 70, 100, .7);
+   position: relative;
+}
+@media(max-width: 768px){
+   .faqBoxPink{
+      width: 65vw;
+      padding: 4vw;
+   }
+}
+.faqBoxPink::after{
+   content: "";
+   width: 100%;
+   height: 100%;
+   background: rgba(130, 70, 100, .7);
+   position: absolute;
+   left: 1.5vw;
+   top: 1.5vw;
+   z-index: 2;
+}
+@media(max-width: 768px){
+   .faqBoxPink::after{
+      left: 3vw;
+      top: 3vw;
+      z-index: 2;
+   }
+}
+.faqBoxPink--big{
+   width: 100%;
+}
+
+.newContainer--faq{
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+   flex-wrap: wrap;
+}
