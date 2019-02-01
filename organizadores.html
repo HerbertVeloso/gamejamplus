@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game Jam Plus</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <link rel="shortcut icon" href="assets/logo.png">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="menu">
+      <a href="index.html">
+         <img class="menu__logo" src="assets/logo.png" alt="Logo Game Jam Plus">
+      </a>
+      <a class="menu__toggle" href="#menu" id="toggle"><span class="menu__toggle__bars"></span></a>
+      <nav class="menu__items" id="menu">
+         <a class="menu__link" href="comofunciona.html">Como funciona?</a>
+         <a class="menu__link" href="premios.html">Prêmios</a>
+         <!-- <a class="menu__link" href="#">Galeria</a> -->
+         <!-- <a class="menu__link" href="#">Impacto social</a> -->
+         <!-- <a class="menu__link" href="#">Mentores</a> -->
+         <a class="menu__link" href="organizadores.html">Organizadores</a>
+         <a class="menu__link" href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="">
+        <section class="newContainer text--blue">
+            <div class="newBoxTitle">
+                <h2 class="newTitle">
+                    Organizadores
+                </h2>
+                <p class="newSubtitle text--blue">
+                    GAME JAM +
+                </p>
+            </div>
+            <div class="organizadoresContainer">
+                <div class="organizadoresBox" data-toggle="modal" data-target="#modalOrg1">
+                    <img class="organizadorImg" src="assets/organizadores/pedroNovo.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Pedro Zambon </h2>
+                        <p class="newSubtitle"> São Paulo </p>
+                    </div>
+                </div>
+                <div class="organizadoresBox">
+                    <img class="organizadorImg" src="assets/organizadores/larissaNovo.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Larissa Rios </h2>
+                        <p class="newSubtitle"> Brasília </p>
+                    </div>
+                </div>
+                <div class="organizadoresBox">
+                    <img class="organizadorImg" src="assets/organizadores/ianNovo.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Ian Rochlin </h2>
+                        <p class="newSubtitle"> Nacional </p>
+                    </div>
+                </div>
+                <div class="organizadoresBox">
+                    <img class="organizadorImg" src="assets/organizadores/lucasNovo.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Lucas Pessoa </h2>
+                        <p class="newSubtitle"> Nacional </p>
+                    </div>
+                </div>
+                <div class="organizadoresBox">
+                    <img class="organizadorImg" src="assets/organizadores/gabrielNovo.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Gabriel Ferreira </h2>
+                        <p class="newSubtitle"> Nacional </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="modal" id="modalOrg1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="organizadoresBox">
+                                <img class="organizadorImg" src="assets/organizadores/pedroNovo.png" alt="">
+                                <div class="newBoxTitle">
+                                    <h2 class="newTitle"> Pedro Zambon </h2>
+                                    <p class="newSubtitle"> São Paulo </p>
+                                </div>
+                            </div>
+                            <div class="modalBoxText">
+                                <p class="modalText">
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <img class="footer__logo" src="assets/logo.png" alt="Logo Game Jam Plus">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="menu.js"></script>
+</body>
+</html>
