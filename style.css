@@ -1149,3 +1149,45 @@
 .close:hover{
    color: #FFF;
 }
+
+.timeline{
+   width: 100%;
+   position: relative;
+   margin: 4vw 0;
+}
+@media(max-width: 768px){
+   .timeline{
+      display: none;
+   }
+}
+.timeline img{
+   width: 100%;
+}
+.linkFirst{
+   width: 11%;
+   height: 16.5%;
+   position: absolute;
+   top: 10.5%;
+   left: 18.5%;
+}
+.linkVote{
+   width: 13.5%;
+   height: 17%;
+   position: absolute;
+   bottom: 7%;
+   left: 30.5%;
+}
+.linkSecond{
+   width: 13%;
+   height: 17%;
+   position: absolute;
+   top: 7%;
+   right: 28.5%;
+}
+.linkFinals{
+   width: 12.5%;
+   height: 18%;
+   position: absolute;
+   bottom: .5%;
+   right: 0%;
+}

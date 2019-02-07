@@ -14,6 +14,7 @@
         </a>
         <a class="menu__toggle" href="#menu" id="toggle"><span class="menu__toggle__bars"></span></a>
         <nav class="menu__items" id="menu">
+            <a class="menu__link" href="index.html">Home</a>
             <a class="menu__link" href="comofunciona.html">Como funciona?</a>
             <!-- <a class="menu__link" href="premios.html">Prêmios</a> -->
             <!-- <a class="menu__link" href="#">Galeria</a> -->
@@ -35,8 +36,15 @@
                     3 etapas
                 </p>
             </div>
+            <div class="timeline">
+                <img src="assets/timeline.png">
+                <a href="#firstStage" class="linkFirst scroll"></a>
+                <a href="#voteStage" class="linkVote scroll"></a>
+                <a href="#secondStage" class="linkSecond scroll"></a>
+                <a href="#finalStage" class="linkFinals scroll"></a>
+            </div>
         </section>
-        <section class="newContainer containerGJ">
+        <section class="newContainer containerGJ" id="firstStage">
             <div class="newBoxTitle">
                 <p class="newTitle"> 1ª Etapa </p>
                 <p class="newTitle"> Game Jam </p>
@@ -45,7 +53,7 @@
                 TODAS AS REGIONAIS OCORRERÃO SIMULTANEAMENTE NO MESMO FIM DE SEMANA, QUE NEM A GGJ. FUNCIONANDO COMO UM MODELO MISTO DE GAME JAM SOMADO A BUSINESS, OS PARTICIPANTES IRÃO PROPOR IDÉIAS, FORMARÃO EQUIPES E TERÃO 48H PARA DESENVOLVEREM UM JOGO E O PITCH SOBRE SEU PROJET. AO FINAL DO PROCESSO, APRESENTARÃO SEUS JOGOS PARA UMA BANCA DE JURADOS SIMULANDO UM PITCHING PARA INVESTIDORES OU UMA PUBLISHER, DESTACANDO NÃO SÓ O JOGO, MAS SEU PLANEJAMENTO DE MARKETING E NEGÓCIOS. APÓS ISSO TEREMOS UM VENCEDOR POR CADA REGIONAL. 
             </p>
         </section>
-        <section class="newContainer containerVotoPopular">
+        <section class="newContainer containerVotoPopular" id="voteStage">
             <div class="newBoxTitle">
                 <p class="newTitle"> Votação </p>
                 <p class="newTitle"> Popular </p>
@@ -54,7 +62,7 @@
                 JOGOS CRIADOS SERÃO SUBMETIDOS NUMA PLATAFORMA ONLINE E AVALIADOS PELO PÚBLICO SEGUIDO DA GAME JAM, HAVERÁ UM PERÍODO DE UM MÊS DE VOTAÇÃO POPULAR ONLINE, DO QUAL TODOS AS OUTRAS EQUIPES QUE NÃO FORAM SELECIONADAS PODEM TENTAR SUA CHANCE, E ASSIM SERÁ ELEITO MAIS UMA EQUIPE VENCEDORA POR CIDADE. ESSE É UM MOMENTO DE ESTIMULAÇÃO DA VISÃO DE NEGÓCIOS E MARKETING PARA AS EQUIPES CONQUISTAREM SUA VAGA NA FINAL, AUMENTANDO TAMBÉM O TEMPO DE VIDA DOS PROJETOS FEITOS NA GAME JAM.
             </p>
         </section>
-        <section class="newContainer containerAceleracao">
+        <section class="newContainer containerAceleracao" id="secondStage">
             <div class="newBoxTitle">
                 <h2 class="newTitle"> 2ª Etapa </h2>
                 <p class="newText"> Aceleração das equipes finalistas </p>
@@ -63,7 +71,7 @@
                 ACONTECE NO PERÍODO ENTRE A REGIONAL E A FINAL. FUNCIONANDO COMO UMA ACELERADORA DE STARTUPS, CONEXÕES ENTRE OS FINALISTAS COM PROFISSIONAIS RENOMADOS DA INDÚSTRIA SERÃO EXECUTADAS PELA ORGANIZAÇÃO PRINCIPAL DO EVENTO E VISA AUMENTAR A QUALIDADE DOS JOGOS E TRAZER A NOÇÃO DE NEGÓCIOS PARA TODOS OS PARTICIPANTES.
             </p>
         </section>
-        <section class="newContainer containerFinal">
+        <section class="newContainer containerFinal" id="finalStage">
             <div class="newBoxTitle">
                 <h2 class="newTitle"> 3ª Etapa </h2>
                 <p class="newText"> A grande final </p>
@@ -85,6 +93,8 @@
     <footer class="footer">
         <img class="footer__logo" src="assets/logo.png" alt="Logo Game Jam Plus">
     </footer>
+    <script src="jquery.js"></script>
+    <script src="scroll.js"></script>
     <script src="menu.js"></script>
 </body>
 </html>
