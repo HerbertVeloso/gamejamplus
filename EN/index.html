@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Game Jam Plus</title>
+   <link rel="shortcut icon" href="../assets/logo.png">
+   <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+   <header class="menu">
+      <a href="index.html">
+         <img class="menu__logo" src="../assets/logo.png" alt="Logo Game Jam Plus">
+      </a>
+      <a class="menu__toggle" href="#menu" id="toggle"><span class="menu__toggle__bars"></span></a>
+      <nav class="menu__items" id="menu">
+         <a class="menu__link" href="index.html">Home</a>
+         <a class="menu__link" href="howitworks.html">How it works?</a>
+         <a class="menu__link" href="organizers.html">Organizers</a>
+         <a class="menu__link" href="faq.html">FAQ</a>
+         <div class="menu__link menu__languages">
+            <a href="../index.html"><img src="../assets/brasil.png"></a>
+            <a href="index.html"><img src="../assets/usa.png"></a>
+         </div>
+      </nav>
+   </header>
+   <main class="">
+      <img class="banner" src="../assets/banner.png" alt="">
+      <section class="conteudo text--blue">
+         <h1 class="newTitle newTitle--big">Game Jam+ begins in:</h1>
+         <div class="countdown">
+            <div class="countdown__box countdown__box--days">
+               <span class="countdown__number" id="days">0</span>
+               <p class="countdown__text">Days</p>
+            </div>
+            <div class="countdown__box countdown__box--hours">
+               <span class="countdown__number" id="hours">0</span>
+               <p class="countdown__text">Hours</p>
+            </div>
+            <div class="countdown__box countdown__box--min">
+               <span class="countdown__number" id="minutes">0</span>
+               <p class="countdown__text">Mins</p>
+            </div>
+            <div class="countdown__box countdown__box--sec">
+               <span class="countdown__number" id="seconds">0</span>
+               <p class="countdown__text">Secs</p>
+            </div>
+         </div>
+      </section>
+      <section class="newContainer2 text--blue">
+         <div class="newBoxTitle">
+            <h2 class="newTitle">
+               Past Edition
+            </h2>
+            <p class="newSubtitle text--blue">
+               Game Jam +
+            </p>
+         </div>
+         <iframe class="video" src="https://www.youtube.com/embed/uA6h5yIlgXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </section>
+      <section class="newContainer2 text--blue">
+         <div class="newBoxTitle--reverse">
+            <h2 class="newTitle">
+               Cities Confirmed
+            </h2>
+            <p class="newSubtitle text--blue">
+               Game Jam +
+            </p>
+         </div>
+         <iframe style="display: none"></iframe>
+         <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1xkUh8jGF4mpjbBvMZJxHrE5vV5qNkPix" frameborder="0" allowfullscreen></iframe>
+      </section>
+      <section class="container">
+         <div class="nextEdition">
+            <div class="newBox box--pink">
+               <div class="newBox__newBoxTitle">
+                  <h2 class="newBox__newTitle">
+                     Next edition
+                  </h2>
+                  <p class="newBox__newSubtitle">
+                     Game Jam +
+                  </p>
+               </div>
+               <h2 class="newBox__newTitle">
+                  Regional Qualifiers
+               </h2>
+               <p class="newBox__newSubtitle">
+                  2 to 4 of August <span class="text--black">2019</span>
+               </p>
+               <h2 class="newBox__newTitle">
+                  Final
+               </h2>
+               <p class="newBox__newSubtitle">
+                November <span class="text--black">2019</span>
+               </p>
+            </div>
+         </div>
+      </section>
+      <section class="contact">
+         <div class="contact__info">
+            <div class="newBoxTitle" style="color: #FFF">
+               <h2 class="newTitle">
+                  Contact us
+               </h2>
+            </div>
+            <p class="text">Do you have any doubt? Suggestion? Complaint? Contact us!</p>
+         </div>
+         <form class="contact__form" action="https://formspree.io/lucas.pessoa@gamertrials.com" method="POST">
+            <input type="hidden" name="_next" value="https://gamejamplus.com" />
+            <input class="input" type="text" name="Nome" placeholder="Name" required>
+            <input class="input" type="email" name="Email" placeholder="Email" required>
+            <textarea class="input" name="Mensagem" placeholder="Message" rows=4 required></textarea>
+            <input class="contact__button" type="submit" value="Send your message">
+         </form>
+      </section>
+   </main>
+   <footer class="footer">
+      <img class="footer__logo" src="../assets/logo.png" alt="Logo Game Jam Plus">
+   </footer>
+   <script src="../countdown.js"></script>
+   <script>
+      function contador(){
+         let dados = countdown(new Date(), new Date(2019, 7, 2), countdown.DAYS|countdown.HOURS|countdown.MINUTES|countdown.SECONDS)
+         
+         const dias = document.getElementById('days');
+         dias.innerHTML = dados.days
+
+         const horas = document.getElementById('hours');
+         horas.innerHTML = dados.hours
+
+         const minutos = document.getElementById('minutes');
+         minutos.innerHTML = dados.minutes
+
+         const segundos = document.getElementById('seconds');
+         segundos.innerHTML = dados.seconds
+      }
+      setInterval(contador, 1000);
+   </script>
+   <script src="../menu.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@
 /* MENU */
 .menu{
    height: 90px;
-   padding: 0 10vw;
+   padding: 0 4vw 0 10vw;
    background: #001e3c;
    position: sticky;
    top: 0;
@@ -17,6 +17,9 @@
    justify-content: space-between;
    align-items: center;
    z-index: 1000;
+}
+.menu__items{
+   position: relative;
 }
 @media (max-width: 768px){
    .menu{
@@ -94,6 +97,31 @@
       left: 0;
       opacity: 0;
       visibility: hidden;
+   }
+}
+.menu__languages{
+   display: inline-block;
+   margin-left: 2vw;
+}
+.menu__languages a{
+   margin: 0 .3vw;
+}
+.menu__languages img{
+   width: 22px;
+}
+@media(max-width: 768px){
+   .menu__languages{
+      /* width: 100%;
+      height: auto; */
+      order: -1;
+      display: flex;
+      justify-content: center;
+   }
+   .menu__languages a{
+      margin: 0 5vw;
+   }
+   .menu__languages img{
+      width: 10vw;
    }
 }
 .menu__link{
