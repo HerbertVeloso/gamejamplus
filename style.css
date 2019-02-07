@@ -539,6 +539,7 @@
 .newBoxTitle{
    width: 25vw;
    position: relative;
+   margin-bottom: 1.5vw;
 }
 .newBoxTitle::after{
    content: "+";
@@ -635,12 +636,27 @@
    color: #001E3C;
 }
 
-.containerGJ, .containerAceleracao, .containerFinal, .containerAbragames, .containerAmazon, .containerOutrosPremios{
+.containerGJ, .containerVotoPopular, .containerAceleracao, .containerFinal, .containerAbragames, .containerAmazon, .containerOutrosPremios{
    margin-bottom: 10vw;
+}
+.containerGJ .newText, .containerVotoPopular .newText,.containerAceleracao .newText,.containerFinal .newText{
+   text-indent: 3vw;
+   text-align: justify;
+}
+.newContainer .newBoxTitle{
+   width: 100%;
+}
+.newContainer .newBoxTitle .newText{
+   text-indent: 0;
+   text-align: initial;
 }
 
 .containerGJ{
    background: url('assets/bgGJ.png') center no-repeat;
+   background-size: cover;
+}
+.containerVotoPopular{
+   background: url('assets/bgVotoPopular.png') center no-repeat;
    background-size: cover;
 }
 .containerAceleracao{
@@ -806,7 +822,7 @@
    margin: 3vw 10vw;
 }
 .faqBox{
-   width: 34vw;
+   width: 36vw;
    margin: 4vw;
    background: rgba(5, 26, 66, .8);
 }
@@ -846,21 +862,85 @@
    background: url('assets/bgOqGJ.png') center no-repeat;
    background-size: cover;
 }
-.faq--diferenca1{
-   background: url('assets/bgDiferenca1.png') center no-repeat;
+.faq--quemPode{
+   background: url('assets/bgQuemPode.png') center no-repeat;
+   background-size: cover;
+}
+.faq--equipe{
+   background: url('assets/bgEquipe.png') center no-repeat;
+   background-size: cover;
+}
+.faq--local{
+   background: url('assets/bgLocal.png') center no-repeat;
+   background-size: cover;
+}
+.faq--remoto{
+   background: url('assets/bgRemoto.png') center no-repeat;
+   background-size: cover;
+}
+.faq--naoDesenvolvedor{
+   background: url('assets/bgNaoDesenvolvedor.png') center no-repeat;
+   background-size: cover;
+}
+.faq--levarJogo{
+   background: url('assets/bgLevarJogo.png') center no-repeat;
+   background-size: cover;
+}
+.faq--mostrarEvento{
+   background: url('assets/bgMostrarEvento.png') center no-repeat;
+   background-size: cover;
+}
+.faq--quemVence{
+   background: url('assets/bgQuemVence.png') center no-repeat;
    background-size: cover;
    margin-bottom: 8vw;
 }
-.faq--diferenca2{
-   background: url('assets/bgDiferenca2.png') center no-repeat;
-   background-size: cover;
-   margin-bottom: 8vw;
+
+.faq--quemPode .faqBox{
+   width: 55vw;
 }
-.faq--diferenca3{
-   background: url('assets/bgDiferenca3.png') center no-repeat;
-   background-size: cover;
-   margin-bottom: 8vw;
+.faq--equipe .faqBox{
+   width: 48vw;
 }
+.faq--local .faqBox{
+   width: 55vw;
+}
+.faq--remoto .faqBox{
+   width: 55vw;
+   margin-top: 16vw;
+}
+.faq--naoDesenvolvedor .faqBox{
+   width: 55vw;
+}
+.faq--levarJogo .faqBox{
+   width: 80vw;
+   margin-top: 16vw;
+}
+.faq--mostrarEvento .faqBox{
+   width: 55vw;
+   margin-top: 16vw;
+}
+.faq--quemVence .faqBox{
+   width: 38vw;
+   margin-top: 16vw;
+}
+@media(max-width: 768px){
+   .faq--equipe .faqBox{
+      width: 55vw;
+   }
+   .faq--quemVence .faqBox{
+      width: 55vw;
+   }
+   .faq--oqGJ .newTitle, .faq--oqGJ .newSubtitle{
+      font-size: 4vw;
+   }
+}
+
+.faqBox .newText{
+   text-indent: 3vw;
+   text-align: justify;
+}
+
 
 .faqBoxPink{
    width: 35vw;
