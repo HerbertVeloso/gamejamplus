@@ -994,17 +994,17 @@
 
 .organizadoresContainer{
    display: flex;
-   /* justify-content: space-between; */
+   justify-content: center;
    align-items: flex-start;
    flex-wrap: wrap;
    padding: 4vw 0;
 }
 
 .organizadoresBox{
-   width: 17vw;
-   margin: 0 2.5vw 4vw 0;
+   width: 260px;
+   margin: 0 32px 32px 0;
    background: #001e3c;
-   padding: 1.5vw;
+   padding: 16px;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -1018,18 +1018,19 @@
    height: 100%;
    background: rgba(5, 26, 66, .8);
    position: absolute;
-   left: 1vw;
-   top: 1vw;
+   left: 16px;
+   top: 16px;
    z-index: 2;
 }
 .organizadorImg{
    width: 100%;
-   margin-bottom: 1vw;
+   margin-bottom: 15px;
    position: relative;
    z-index: 5;
 }
 .organizadoresBox .newBoxTitle{
    width: auto;
+   margin-bottom: 0;
    color:#97436b;
    display: flex;
    flex-direction: column;
@@ -1039,17 +1040,17 @@
    z-index: 5;
 }
 .organizadoresBox .newBoxTitle::after{
-   font-size: 2vw;
+   font-size: 38px;
    position: absolute;
-   top: calc(50% - 1.5vw);
-   left: -2vw;
+   top: calc(50% - 27px);
+   left: -38px;
 }
 .organizadoresBox .newTitle{
-   font-size: 1vw;
-   margin-bottom: .5vw;
+   font-size: 16px;
+   margin-bottom: 6px;
 }
 .organizadoresBox .newSubtitle{
-   font-size: 1vw;
+   font-size: 14px;
    margin-bottom: 0;
 }
 
@@ -1081,6 +1082,18 @@
 .modal-body .organizadoresBox{
    width: 40%;
 }
+@media(max-width: 768px){
+   .modal-body{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4vw 10vw;
+   }
+   .modal-body .organizadoresBox{
+      width: 260px;
+      margin-right: 0;
+   }
+}
 
 .modal-body .organizadoresBox .newBoxTitle::after{
    font-size: 3.5vw;
@@ -1094,15 +1107,40 @@
 .modal-body .organizadoresBox .newSubtitle{
    font-size: 1.5vw;
 }
+@media(max-width: 768px){
+   .modal-body .organizadoresBox .newBoxTitle::after{
+      font-size: 38px;
+      top: calc(50% - 27px);
+      left: -38px;
+   }
+   .modal-body .organizadoresBox .newTitle{
+      font-size: 16px;
+      margin-bottom: 6px;
+   }
+   .modal-body .organizadoresBox .newSubtitle{
+      font-size: 14px;
+   }
+}
 
 .modalBoxText{
    width: 45%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .modalText{
    font-family: Panton-Light;
    font-size: 1.2vw;
-   color: #97436b;
+   color: #FFF;
    text-align: center;
+}
+@media(max-width: 768px){
+   .modalBoxText{
+      width: 100%;
+   }
+   .modalText{
+      font-size: 12px;
+   }
 }
 
 .close{
