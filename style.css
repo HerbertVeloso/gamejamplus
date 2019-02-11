@@ -1219,3 +1219,29 @@
    bottom: .5%;
    right: 0%;
 }
+
+
+
+.edicoes__map{
+   width: 100%;
+}
+.galeria{
+
+}
+.galeria__row{
+   display: flex;
+   align-items: flex-start;
+}
+.galeria__column{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+}
+.galeria__img{
+   width: 100%;
+}
+
+.edicao__logo{
+   width: 25vw;
+}
