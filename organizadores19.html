@@ -30,7 +30,13 @@
          <!-- <a class="menu__link" href="#">Galeria</a> -->
          <!-- <a class="menu__link" href="#">Impacto social</a> -->
          <!-- <a class="menu__link" href="#">Mentores</a> -->
-         <a class="menu__link" href="organizadores.html">Organizadores</a>
+         <div class="menu__link menu__dropdown">
+            Organizadores
+            <div class="menu__dropdown__items">
+                <a class="menu__link" href="organizadores19.html">2019</a>
+                <a class="menu__link" href="organizadores18.html">2018</a>
+            </div>
+        </div>
          <a class="menu__link" href="faq.html">FAQ</a>
          <div class="menu__link menu__languages">
             <a href="index.html"><img src="assets/brasil.png"></a>
@@ -42,7 +48,26 @@
         <section class="newContainer text--blue">
             <div class="newBoxTitle">
                 <h2 class="newTitle" style="margin-bottom: 0">
-                    Organizadores
+                    Organização Geral
+                </h2>
+                <p class="newSubtitle text--blue">
+                    GAME JAM +
+                </p>
+            </div>
+            <div class="organizadoresContainer">
+                <div class="organizadoresBox" data-toggle="modal" data-target="#modalLucasPessoa">
+                    <img class="organizadorImg" src="assets/organizadores2019/Lucas.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Lucas Pessoa </h2>
+                        <p class="newSubtitle"> Nacional </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newContainer text--blue">
+            <div class="newBoxTitle">
+                <h2 class="newTitle" style="margin-bottom: 0">
+                    Organização Regional
                 </h2>
                 <p class="newSubtitle text--blue">
                     GAME JAM +
@@ -54,13 +79,6 @@
                     <div class="newBoxTitle">
                         <h2 class="newTitle"> Jairo Lopes </h2>
                         <p class="newSubtitle"> Dublin </p>
-                    </div>
-                </div>
-                <div class="organizadoresBox" data-toggle="modal" data-target="#modalLucasPessoa">
-                    <img class="organizadorImg" src="assets/organizadores2019/Lucas.png" alt="">
-                    <div class="newBoxTitle">
-                        <h2 class="newTitle"> Lucas Pessoa </h2>
-                        <p class="newSubtitle"> Nacional </p>
                     </div>
                 </div>
                 <div class="organizadoresBox" data-toggle="modal" data-target="#modalJoseNunes">
@@ -96,6 +114,13 @@
                     <div class="newBoxTitle">
                         <h2 class="newTitle"> Pâmela Beltrani </h2>
                         <p class="newSubtitle"> Curitiba </p>
+                    </div>
+                </div>
+                <div class="organizadoresBox" data-toggle="modal" data-target="#modalDaniloCarvalho">
+                    <img class="organizadorImg" src="assets/organizadores2019/DaniloTeresina.png" alt="">
+                    <div class="newBoxTitle">
+                        <h2 class="newTitle"> Danilo Carvalho </h2>
+                        <p class="newSubtitle"> Teresina </p>
                     </div>
                 </div>
             </div>
@@ -258,30 +283,55 @@
                 </div>
             </div>
             <div class="modal" id="modalPamelaBeltrani" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="organizadoresBox">
+                                <img class="organizadorImg" src="assets/organizadores2019/PamelaCuritiba.jpg" alt="">
+                                <div class="newBoxTitle">
+                                    <h2 class="newTitle"> Pâmela Beltrani </h2>
+                                    <p class="newSubtitle"> Curitiba </p>
+                                </div>
                             </div>
-                            <div class="modal-body">
-                                <div class="organizadoresBox">
-                                    <img class="organizadorImg" src="assets/organizadores2019/PamelaCuritiba.jpg" alt="">
-                                    <div class="newBoxTitle">
-                                        <h2 class="newTitle"> Pâmela Beltrani </h2>
-                                        <p class="newSubtitle"> Curitiba </p>
-                                    </div>
-                                </div>
-                                <div class="modalBoxText">
-                                    <p class="modalText">
-                                        Atualmente é professora do curso de Tecnologia em Jogos Digitais da Universidade Positivo. É mestre em Ciência da Computação com a defesa do trabalho "Predição de Movimento em Jogos Distribuídos Baseada em Aprendizado de Máquina"(2015) pela Universidade Federal do Paraná na área de Jogos Digitais com enfoque de aplicação de Aprendizado de Máquina em Sistemas Distribuídos. É especialista em Desenvolvimento de Jogos Digitais (2015) pela Pontifícia Universidade Católica do Paraná e graduada em Bacharelado em Ciência da Computação pela Pontifícia Universidade Católica do Paraná (2012).
-                                    </p>
-                                </div>
+                            <div class="modalBoxText">
+                                <p class="modalText">
+                                    Atualmente é professora do curso de Tecnologia em Jogos Digitais da Universidade Positivo. É mestre em Ciência da Computação com a defesa do trabalho "Predição de Movimento em Jogos Distribuídos Baseada em Aprendizado de Máquina"(2015) pela Universidade Federal do Paraná na área de Jogos Digitais com enfoque de aplicação de Aprendizado de Máquina em Sistemas Distribuídos. É especialista em Desenvolvimento de Jogos Digitais (2015) pela Pontifícia Universidade Católica do Paraná e graduada em Bacharelado em Ciência da Computação pela Pontifícia Universidade Católica do Paraná (2012).
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="modal" id="modalDaniloCarvalho" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="organizadoresBox">
+                                <img class="organizadorImg" src="assets/organizadores2019/DaniloTeresina.png" alt="">
+                                <div class="newBoxTitle">
+                                    <h2 class="newTitle"> Danilo Carvalho </h2>
+                                    <p class="newSubtitle"> Teresina </p>
+                                </div>
+                            </div>
+                            <div class="modalBoxText">
+                                <p class="modalText">
+                                    Bacharel em ciência da computação pela Universidade Federal do Piauí - UFPI, especialista em Engenharia de Software pelo Centro de Ensino Unificado de Teresina - Estácio|CEUT. É desenvolvedor certificado pela Unity3D, analista de sistemas da Secretaria de Fazenda - SEFAZ PI, foi professor do curso de programação de jogos com Unity3D pelo Instituto Interaje e trabalha com desenvolvimento de jogos eletrônicos de forma autônoma desde 2013 auxiliando no desenvolvimento de projetos como The Last Nightmary - A Lenda do Cabeça de Cuia, Metodological e Econsciência Energética.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
