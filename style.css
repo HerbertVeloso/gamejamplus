@@ -887,39 +887,39 @@
 }
 
 .faq--oqGJ{
-   background: url('assets/bgOqGJ.png') center no-repeat;
+   background: url('assets/bgOqGJ.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--quemPode{
-   background: url('assets/bgQuemPode.png') center no-repeat;
+   background: url('assets/bgQuemPode.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--equipe{
-   background: url('assets/bgEquipe.png') center no-repeat;
+   background: url('assets/bgEquipe.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--local{
-   background: url('assets/bgLocal.png') center no-repeat;
+   background: url('assets/bgLocal.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--remoto{
-   background: url('assets/bgRemoto.png') center no-repeat;
+   background: url('assets/bgRemoto.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--naoDesenvolvedor{
-   background: url('assets/bgNaoDesenvolvedor.png') center no-repeat;
+   background: url('assets/bgNaoDesenvolvedor.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--levarJogo{
-   background: url('assets/bgLevarJogo.png') center no-repeat;
+   background: url('assets/bgLevarJogo.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--mostrarEvento{
-   background: url('assets/bgMostrarEvento.png') center no-repeat;
+   background: url('assets/bgMostrarEvento.jpg') center no-repeat;
    background-size: cover;
 }
 .faq--quemVence{
-   background: url('assets/bgQuemVence.png') center no-repeat;
+   background: url('assets/bgQuemVence.jpg') center no-repeat;
    background-size: cover;
    margin-bottom: 8vw;
 }
