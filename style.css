@@ -129,12 +129,27 @@
    color: #FFF;
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
+   position: relative;
    text-transform: uppercase;
    text-decoration: none !important;
 }
+/* .menu__link::after {
+   content: "";
+   height: 3px;
+   width: 100%;
+   background: #88AE9F;
+   opacity: 0;
+   position: absolute;
+   bottom: -4px;
+   left: 0;
+   transition: all .7s;
+} */
 .menu__link:hover{
-   color: #FFF;
+   color: #88AE9F;
 }
+/* .menu__link:hover .menu__link::after {
+   opacity: 1;
+} */
 @media(max-width: 1200px){
    .menu__link{
       margin: 0 .4vw;
